@@ -2,7 +2,7 @@ import { stripe } from "../../lib/stripe";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
-  const origin = req.headers.get("origin");
+  const origin = req.headers.get("origin") || process.env.NEXT_PUBLIC_BASE_URL;;
   try {
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
@@ -46,8 +46,8 @@ export async function POST(req: Request) {
       },
       
       ],
-      success_url: "${origin}/success?session_id={CHECKOUT_SESSION_ID}",
-      cancel_url: "${origin}/cancel",
+      success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${origin}/cancel`,
     });
 
     return NextResponse.json({
