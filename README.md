@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stripe Payment Integration Demo with Next.js
 
-## Getting Started
+A simple and secure payment integration demo built using **Next.js** and **Stripe Checkout**.
 
-First, run the development server:
+## Live Demo
+
+🌐 **Demo URL:** https://next-stripe-payment-integration.vercel.app
+
+## Overview
+
+This project demonstrates how to integrate **Stripe Payments** into a **Next.js** application using Stripe's hosted Checkout page. Instead of collecting payment details directly within the application, users are redirected to Stripe's secure, PCI-compliant checkout experience for payment processing.
+
+## Features
+
+* ✅ Built with Next.js
+* ✅ Secure Stripe Checkout integration
+* ✅ Hosted payment page powered by Stripe
+* ✅ PCI-compliant payment flow
+* ✅ Fast and responsive user experience
+* ✅ Easy deployment on Vercel
+
+## How It Works
+
+1. User clicks the payment button.
+2. The application creates a Stripe Checkout Session on the server.
+3. User is redirected to Stripe's secure hosted checkout page.
+4. Payment is processed securely by Stripe.
+5. User is redirected back to the application after successful payment or cancellation.
+
+## Tech Stack
+
+* Next.js
+* Stripe Checkout
+* TypeScript / JavaScript
+* Vercel
+
+## Security
+
+This demo uses Stripe's hosted Checkout page, ensuring that sensitive payment information is handled directly by Stripe rather than the application. This approach simplifies PCI compliance requirements and follows industry best practices for online payments.
+
+## Local Development
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Configure Environment Variables
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_publishable_key
+STRIPE_SECRET_KEY=your_secret_key
+```
+
+### Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+Deploy easily using Vercel:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+vercel deploy
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Live Preview
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+👉 https://next-stripe-payment-integration.vercel.app
 
-## Deploy on Vercel
+## Developer Information
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Developer:** Husen Telwala
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Full Stack Developer
+* Specialized in Next.js, React, Node.js, and Payment Gateway Integrations
+* Experience with Stripe, Razorpay, REST APIs, and Cloud Deployments
+
+## License
+
+This project is available for educational, learning, and demonstration purposes.
+
+
+## Developer Information
+
+**Husen Telwala**
+Full Stack Developer specializing in modern web applications, payment gateway integrations, and cloud deployments.
+
+### Connect With Me
+
+* 🌐 Portfolio: https://husentelwalainfo.github.io/
+* 💻 GitHub: https://github.com/husenindia
+
+### Projects & Contributions
+
+Feel free to explore my repositories and projects on GitHub:
+
+👉 https://github.com/husenindia
+
+For more information about my work, experience, and portfolio:
+
+👉 https://husentelwalainfo.github.io/
